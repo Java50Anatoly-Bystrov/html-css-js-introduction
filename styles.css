@@ -1,0 +1,45 @@
+.main-bord{
+display: flex;
+flex-direction: row;
+}
+.chess-section{
+    display:flex;
+    align-items: center;
+    flex-direction:row
+}
+.white{
+    width: 5vw;
+    height: 5vw;
+    border: solid 1px gray;
+    background-color: white;
+    font-size: 60px;
+    text-align: center;
+
+}
+.full{
+    width: 5vw;
+    height:5vw;
+    border: solid 1px gray;
+    background-color: brown;
+    font-size: 60px;
+    text-align: center;
+}
+body{
+background: url(img/chess3.jpeg);
+background-size:100%;
+background-repeat: no-repeat;
+margin-right: 16px;
+margin-top: 115px;
+flex-direction: column;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.style{
+    padding-left: 2px;
+    padding-right: 2px;
+    align-content: center;
+    margin: 30px;
+    display: center;
+    
+}
