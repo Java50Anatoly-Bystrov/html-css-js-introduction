@@ -36,10 +36,10 @@ justify-content: center;
 align-items: center;
 }
 .style{
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 1.5px;
+    padding-right: 1.3px;
     align-content: center;
-    margin: 30px;
+    margin: 29px;
     display: center;
     
 }
