@@ -36,8 +36,9 @@ justify-content: center;
 align-items: center;
 }
 .style{
-display: inline-block;
+display: inline;
 padding-left: 3.5em;
+justify-content: center;
 }
 .numbers{
     justify-content: center;
