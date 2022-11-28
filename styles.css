@@ -36,10 +36,18 @@ justify-content: center;
 align-items: center;
 }
 .style{
+  page-break-inside: auto;
     padding-left: 1.5px;
-    padding-right: 1.3px;
-    align-content: center;
+    padding-right: 1.2px;
+    align-content: row;
     margin: 29px;
-    display: center;
-    
+    align-items: center;
+    justify-content: center;
 }
+.numbers{
+    justify-content: center;
+    margin-right: 20px;
+    display:inline
+}
+
+
