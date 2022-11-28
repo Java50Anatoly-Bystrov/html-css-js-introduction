@@ -36,9 +36,9 @@ justify-content: center;
 align-items: center;
 }
 .style{
-display: inline;
-padding-left: 3.5em;
-justify-content: center;
+    display: inline;
+    padding-left: 4vw;
+    justify-content: center;
 }
 .numbers{
     justify-content: center;
