@@ -3,9 +3,10 @@ html{
 }
 body{
     height: 100%;
-    background-color :silver;
     display: flex;
     flex-direction: column; 
+    background-size: cover;
+    background: url(/images/bckgroundM.jpeg);
 }
 .logo{
     display: block;
@@ -21,11 +22,6 @@ body{
     width: 25vw;
     height:15vw;
     border-radius: 100%;
-}
-.background{
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 .main-class{
     display: flex;
@@ -63,23 +59,20 @@ body{
     align-items: center;
 }
 .thumbnails-item{
- border: solid 1px blue;
+border: solid 1px black;
  margin-top: 2vh;
- border-radius: 100%;
+ border-radius: 25%;
+ overflow: hidden;
 }
 
 .thumbnails-image{
     display: block;
-    border: solid 1px blue;
     width: 25vw;
     height:15vw;
-    border-radius: 100%;
-    justify-content: space-around;
+    
 }
 .thumbnails-title{
     display: block;
-    border: solid 1px blue;
-    display:block;
     text-align: center;
     background-color: blanchedalmond;
   
