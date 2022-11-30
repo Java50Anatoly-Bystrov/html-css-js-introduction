@@ -1,0 +1,85 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-color :silver;
+    display: flex;
+    flex-direction: column; 
+}
+.logo{
+    display: block;
+    text-align: center;
+    background-color: beige;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 0;
+}
+.logo-image{
+    display: block;
+    justify-content: left;
+    width: 25vw;
+    height:15vw;
+    border-radius: 100%;
+}
+.background{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main-class{
+    display: flex;
+    flex-direction: column;
+}
+.details-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lambo-class{
+    width: 100vw;
+    height:70vw
+}
+.details-image{
+    width: 60vw;
+    height: 50vw;
+}
+.details-title{
+    display: block;
+    background-color: black;
+}
+.thumbnails-list{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 30vh;
+    overflow-y:scroll;
+    list-style: none;
+    justify-content: space-around;
+    padding-left: 0;
+    
+}
+.thumbnails-anchor{
+    display: block;
+    align-items: center;
+}
+.thumbnails-item{
+border: solid 1px blue;
+ border: solid 2px black;
+ margin-top: 2vh;
+ border-radius: 100%;
+}
+
+.thumbnails-image{
+    border: solid 1px blue;
+    width: 25vw;
+    height:15vw;
+    border-radius: 100%;
+    justify-content: space-around;
+}
+.thumbnails-title{
+    border: solid 1px blue;
+    display:block;
+    text-align: center;
+    background-color: blanchedalmond;
+  
+}

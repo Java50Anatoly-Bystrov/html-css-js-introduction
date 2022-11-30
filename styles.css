@@ -4,13 +4,13 @@ display: flex;
 flex-direction: row;
 }
 .chess-section{
-   
+
     display:flex;
     align-items: center;
     flex-direction:row
 }
 .white{
-   
+
     width: 5vw;
     height: 5vw;
     border: solid 1px gray;
@@ -47,8 +47,8 @@ align-items: center;
     justify-content: center;
 }
 .numbers{
-    font-size: 1vw;
     
+    font-size: 1vw;
     justify-content: center;
     margin-right: 20px;
     display:inline
