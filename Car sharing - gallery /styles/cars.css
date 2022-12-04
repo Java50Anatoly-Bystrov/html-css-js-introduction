@@ -11,6 +11,7 @@ body{
     margin: 0;
 }
 .logo{
+    
     display:flex;
     font-size: 50rem;
     background: url(../images/images.png);
