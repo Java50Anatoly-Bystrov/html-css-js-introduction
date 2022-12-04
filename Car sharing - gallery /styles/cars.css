@@ -11,24 +11,16 @@ body{
     margin: 0;
 }
 .logo{
-    display: block;
-    background-color: transparent;
-    font-size: 5vw;
-    color:red;
+    display:flex;
+    font-size: 50rem;
     background: url(../images/images.png);
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    width: 20%;
+    height: 10%;
 }
-.logo-image{
-    display: block;
-    justify-content: left;
-    width: 20vw;
-    height: 15vw;
-    border-radius: 100%;
-    background-size: cover;
-    background-position: center;
-
+.title-logo{
+    display: inline-flex;
+    justify-content: end;
 }
 .main-class{
     display: flex;
@@ -37,12 +29,12 @@ body{
 .anotation{
     display:block;
     text-align: center;
-    background-color : rgb(131, 211, 70);
+    background-color : rgb(28, 120, 219)
 }
 .details-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
 }
 .lambo-class{
     width: 100vw;
@@ -52,40 +44,73 @@ body{
     width: 60vw;
     height: 50vw;
 }
-.details-title{
-    display: block;
-    background-color: black;
-}
 .thumbnails-list{
     display: flex;
     flex-wrap: wrap;
-    max-height: 30vh;
+    max-height: 45vh;
     overflow-y:scroll;
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-left: 0;
-    
 }
 .thumbnails-anchor{
-    display: block;
-    align-items: center;
+ text-decoration: none;
 }
 .thumbnails-item{
 border: solid 1px black;
- margin-top: 2vh;
+ margin-top: 5vh;
  border-radius: 25%;
  overflow: hidden;
+ min-height: 12vh;
 }
-
 .thumbnails-image{
     display: block;
     width: 25vw;
-    height:15vw;
-    
+    height: 25vw;
 }
 .thumbnails-title{
     display: block;
     text-align: center;
-    background-color: rgb(131, 211, 70);;
+    background-color: rgb(28, 120, 219)
   
+}
+@media(min-width:560px){
+    .main-class{
+        flex-direction:row;
+        justify-content: center;  
+    }
+    .thumbnails-item{
+        min-height: 18vw;
+    }
+    .thumbnails-list{
+        order: -1;
+        flex-direction: column;
+        flex-wrap:nowrap;
+        max-height: 80vh;
+        justify-content: flex-start;
+        padding-right:60px;
+    }
+    .lambo-class{
+        max-width: 60vw;
+        max-height: 40vw;
+    }
+    .thumbnails-image {
+        width: 15vw;
+        height: 15vw;  
+    }
+    .thumbnails-title{
+        text-transform: uppercase;
+        min-height: 10vh;
+        display: block;
+        text-align: center;
+        background-color: rgb(28, 120, 219)
+    }
+    .logo{
+        display:flex;
+         font-size: 50rem;
+         background-size: cover;
+         width: 15%;
+        height: 20%;
+    }
+
 }
