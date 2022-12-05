@@ -11,7 +11,7 @@ body{
     margin: 0;
 }
 .logo{
-    
+
     display:flex;
     font-size: 50rem;
     background: url(../images/images.png);
@@ -89,7 +89,7 @@ border: solid 1px black;
         flex-wrap:nowrap;
         max-height: 80vh;
         justify-content: flex-start;
-        padding-right:60px;
+        padding-right:95px;
     }
     .lambo-class{
         max-width: 60vw;
