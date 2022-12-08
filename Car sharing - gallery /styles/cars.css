@@ -47,9 +47,7 @@ body{
     left: 40%;
     position: absolute;
     font-family: ZenDots;
-    background-color : rgb(28, 120, 219)
-    
-    
+    background-color : rgb(28, 120, 219)   
 }
 .details-container{
     display: flex;
@@ -77,12 +75,11 @@ body{
  text-decoration: none;
 }
 .thumbnails-item{
+
 border: solid 1px black;
  margin-top: 10vh;
  border-radius: 25%;
  overflow: hidden;
- min-height: calc (var(--thumbnails-image-height) + var(--thumbnails-image-height));
- min-width: var(--thumbnails-image-widht);
  margin-left: 1vw;
 }
 .thumbnails-item:hover{
@@ -90,11 +87,10 @@ border: solid 1px black;
 }
 .thumbnails-image{
     display: block;
-    width: var(--thumbnails-image-widht);
-    height: var(--thumbnails-image-height);
+    width: 25vw;
+    height: 15vw;
 }
 .thumbnails-title{
-    text-size-adjust: var(--thumbnails-image-height);
     display: block;
     text-align: center;
     background-color: rgb(28, 120, 219)
@@ -103,8 +99,8 @@ border: solid 1px black;
 }
 @media(min-width:560px){
     body{
-    --thumbnails-image-width: 15vw;
-    --thumbnails-image-height: 10vw;
+    --thumbnails-image-width: 10vw;
+    --thumbnails-image-height: 5vw;
     --thumbnails-title-height: calc (var(--thumbnails-image-height) * 0.2);
     --lambo-class-width: 45vw;
     --lambo-class-height: 35vw;
@@ -121,6 +117,7 @@ border: solid 1px black;
         flex-direction: column;
         flex-wrap:nowrap;
         max-height: 80vh;
+        max-width: 22vw;
         justify-content: flex-start;
         padding-right:95px;
     }
@@ -129,7 +126,7 @@ border: solid 1px black;
         max-height: 40vw;
     }
     .thumbnails-image {
-        width: 25vw;
+        width: 20vw;
         height: 15vw;  
     }
     .thumbnails-title{
@@ -141,10 +138,23 @@ border: solid 1px black;
     }
     .logo{
         display:flex;
-         font-size: 50rem;
+         font-size: 10vh;
          background-size: cover;
-         width: 20%;
-        height: 15%;
+         width: 25vh;
+        height: 40vh;
     }
-
+    @media (min-width: 1000px) {
+        .details-container {
+            margin-top: 4vh;
+            margin-right: 5vw;
+        }    
+        .thumbnails-list {
+            
+            margin-top: 2.5vh;
+            max-height: 86vh;
+        }
+        .thumbnails-title {
+            font-size: 1.5em;
+        }
+    }
 }
