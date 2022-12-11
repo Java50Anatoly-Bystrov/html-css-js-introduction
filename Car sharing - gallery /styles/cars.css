@@ -75,12 +75,11 @@ body{
  text-decoration: none;
 }
 .thumbnails-item{
-
 border: solid 1px black;
 margin-top: 4vh;
- border-radius: 25%;
- overflow: hidden;
- margin-left: 1vw;
+border-radius: 25%;
+overflow: hidden;
+margin-left: 1vw;
 }
 .thumbnails-item:hover{
     transform: scale(1.1);
