@@ -9,14 +9,18 @@
     <link rel="shortcut icon" href="images/images.png" type="image/x-icon">
 </head>
 <body>
-    <header class="logo"></header>
+    <header class="logo">
+        <h2>Cars Gallery</h2>  
+    </header>
     <main class="main-class hidden">
         <section class="details-container">
+            <audio id= "audio" src=""></audio>
             <div class="details-frame">
                 <button id="hide-button" onclick="hideDetails()"> Exit </button>
-                <img src="images/2022_lamborghini_countach_lpi_800_5_4k_hd_cars-1920x1080.jpeg" class="lambo-class">
-                <span class ="anotation"><big>Our selections</big></span>
+                <img src="images/images.png" class="details-image">
+                <span class ="detail-title">XXXXXXXXXXXXXXXXXXXXXXXXXXX</span>
             </div>
+
         </section>
         <ul class="thumbnails-list">
             <li class="thumbnails-item">
@@ -84,6 +88,6 @@
             </li>
         </ul>
     </main>
-    <script src="/src/cars.js"></script>
+    <script src="src/cars.js"></script>
 </body>
 </html>
