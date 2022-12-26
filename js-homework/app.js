@@ -1,57 +1,68 @@
-// No 1 
-let num = 123.45;
-let num1 = -280.123;
-let num2 = 123;
-let sum = getDigitsum(num);
-let sum1 = getDigitsum(num1);
-let sum2 = getDigitsum(num2);
+let strr = "123m"
+let numm = parseInt(str)+ 10 +'m';
+let str1 =  "js.5"
+let numInt = parseInt(str1,16);
+let numFloat = parseFloat(str1);
+function myParseInt(str,base){
+    base = base || 10;
+    let  res = 0; 
+    for(let i = 0 ; i < str.lenght; i++){
+        res = res * base + getCode(str[i]);
 
-function getDigitsum(number) {
-    number = Math.round(number);
-    if (number < 0) { number = -number; }
-    let res = 0;
-    do {
-        res = Math.trunc(res + number % 10);
-        number = Math.trunc(number / 10);
-    } while (number != 0);
+    }
     return res;
 }
-console.log("res1 =", sum);
-console.log("res2 =", sum1);
-console.log("res3 =", sum2);
-
-// No 2
-let string = ("9000 / ((10 + 20) ** 2)");
-let string1 = ("9 + 100 / 2");
-console.log(eval(string));
-console.log(eval(string1));
-
-// No 3
-let ananas = "a" + "tol" / 2 + "a" + "s";
-console.log(ananas.toLocaleLowerCase());
-
-// No 4
-let reverse = PrintReverse(123.45);
-let reverse1 = PrintReverse(-280.123);
-let reverse2 = PrintReverse(123456);
-let reverse3 = PrintReverse(-123);
-function PrintReverse(number) {
-    number = Math.trunc(number);
-    let a = 0;
-    let res = " ";
-    if (number < 0) {
-        number = -number;
-        res = "-"
-    };
-    do {
-        a = number % 10;
-        res = res + a;
-        number = Math.trunc(number / 10);
-    } while (number != 0);
-
+function getCode(symbol){
+    symbol = symbol.toLowerCase();
+    const codeA = 'a'.charCodeAt();
+    const res = symbol <= '9'? +symbol : symbol.charCodeAt - codeA + 10;
     return res;
 }
-console.log(reverse);
-console.log(reverse1);
-console.log(reverse2);
-console.log(reverse3);
+    // let str = "ff";
+    // let str2 = "123";
+    // let str22 = "Java";
+    // let str3 = "123m";
+    // let str4 = "123.5";
+    // let num = parseInt(str1, 16);
+    // let myNum = myParseInt(str1, 16);
+    // num = parseInt(str2);
+    // myNum = myParseInt(str2);
+    // num = parseInt(str22, 36);
+    // myNum = myParseInt(str22, 36);
+    // num = parseInt(str3);
+    // myNum = myParseInt(str3);
+    // num = parseInt(str4);
+    // myNum = myParseInt(str4);
+    // return str;
+let number = 255;
+let str = "" + number;
+str = "" + number;
+str = number.toString(36);
+function mytoString(number,base){
+    let res  = '';
+    base = base || 10;
+    number = Math.trunc(Math.abs(number));
+    do{
+        const symbol = getSymbol(digit);
+        res = symbol +res;
+        number = Math.trunc(number /base)
+    }while(number);
+    return res;
+}
+function getSymbol(digit){
+const codeA = 'a'.charCodeAt();
+let symbol;
+if(digit < 10){
+    symbol = "" + digit;
+} else{
+    const codeAscii = digit - 10 + codeA;
+    symbol = String.fromCharCode(codeAscii);
+}
+return symbol;
+}
+ let num100 = 990500;
+ let str100 =num100.toString();
+ let myStr100 =mytoString(num100);
+ str100 = num100.toString(36);
+ myStr100 =mytoString(num100,36);
+ num100 =123.45
