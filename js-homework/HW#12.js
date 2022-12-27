@@ -2,6 +2,7 @@
 function myParseInt(str, base) {
     base = base || 10;
     let res = 0;
+    let index = str[0] === "-" ? 1 : 0;
     if ((str[0] === "-") & (base <= 10)) {
         for (let i = 1; i < str.length; i++) {
             if (getCode(str[i]) <= 9) { res = res * base + getCode(str[i]); }
