@@ -1,5 +1,5 @@
 //References to documents objects model
-const guessinputElement = document.querySelector(".guess-input");
+const guessInputElement = document.querySelector(".guess-input");
 const guessLettersElement = document.querySelector(".guess-letters");
 let lettersDivs;
 const trialsElement = document.querySelector(".trials-remained");
@@ -14,7 +14,7 @@ let flGameOver = false;
 function startGame(){
     word = getword();
     fillLettersDivs();
-    flGameOver = true;
+    flGameOver = false;
     trials = word.length + 1;
     playAgainElement.style.display = "none";
     gameResultElement.innerHTML = "";
@@ -33,7 +33,34 @@ function fillLettersDivs(){
     lettersDivs = document.querySelectorAll(".letter");
 }
 function onChange(){
-    //TODO
+    if(flGameOver){
+        alert("Game is over, press play-again")
+    } else{
+        const trialWord = guessInputElement.value; 
+        trials --;
+        trialsElement.innerHTML = `remained trials ${trials}`;
+        if (trialWord.length != word.length){
+            alert("wrong numbers of letters")
+        } else{
+            coloringWord(trialWord);
+        }
+    }
+ 
+
+}
+function coloringWord(trialWord){
+    const arrayWord = Array.from(trialWord);
+    arrayWord.forEach(function(letter, index){
+        lettersDivs[index].innerHTML = letter;
+        lettersDivs[index].style.color = getColor (letter,index);
+    });
+}
+function getColor(letter, index){
+    let res = "red"
+    if(word.includes(letter)){
+        res = word[index] == letter ?  "green" : "yellow";
+    }
+    return res;
 }
 function finishGame(){
     //TODO

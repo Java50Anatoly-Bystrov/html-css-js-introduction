@@ -16,4 +16,6 @@
     height: 5vw;
     background-color: grey;
     border: 1px solid black;
+    text-align: center;
+    font-size: 2em;
 }
