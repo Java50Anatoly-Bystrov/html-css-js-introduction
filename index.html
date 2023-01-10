@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="styles/wordle.css">
+</head>
+<body>
+    <header>
+        <h3 class = "logo">Wordle Game</h3>
+    </header>
+    <input class ="guess-input" type = "text" onchange="onChange(event)" 
+    placeholder="guess word"> 
+    <section class="guess-letters"> </section>
+
+    <section class="game-status">
+        <p class="trials-remained"></p>
+        <p class="game-result"></p>
+        <button class="play-again" onclick="startGame()">Play again</button>
+    </section>
+    
+<script src="src/wordle.js"></script>
+</body>
+</html>
