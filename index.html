@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wordle</title>
-    <link rel="stylesheet" href="styles/wordle.css">
+    <title>Marvels-Field</title>
+    <link rel="stylesheet" href="styles/marvels.css">
 </head>
 <body>
     <header>
-        <h3 class = "logo">Wordle Game</h3>
+        <h3 class ="logo"> Marvels Field Game</h3>
     </header>
-    <input class ="guess-input" type = "text" onchange="onChange(event)" 
-    placeholder="guess word"> 
-    <section class="guess-letters"> </section>
-
-    <section class="game-status">
-        <p class="trials-remained"></p>
-        <p class="game-result"></p>
-        <button class="play-again" onclick="startGame()">Play again</button>
+    <section class = "field">
+        <p id="question"></p>
+        <input type="text" id="word-input" placeholder="enter word" oninput="checkWord()">
+        <p id="letters-remained"></p>
+        <input type="text" minlength="1" maxlength="1" onchange="processLetter()" id="letter-input">
+        <button id="guess-button" onclick="takeChance()">Guess</button>
     </section>
-    
-<script src="src/wordle.js"></script>
+    <section class="word">
+
+    </section>
+    <section class="result">
+        <p id="result-message"></p>
+        <button onclick="startGame()" id="play-again">Play Game</button>
+    </section>
+ <script src="src/marvels.js"></script>   
 </body>
 </html>
