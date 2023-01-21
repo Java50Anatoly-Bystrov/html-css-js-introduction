@@ -37,16 +37,16 @@ function getMostPopulatedCountries(employees, counter) {
     const sortedCountries = Object.keys(countryCount).sort((a, b) => countryCount[b] - countryCount[a]);
     return sortedCountries.slice(0, counter);
 }
-console.log(getMostPopulatedCountries(employees, 3)); 
+console.log(getMostPopulatedCountries(employees, 3));
 
 function isAnagram(word, anagram) {
-    if(word.length != anagram.length) return false;
+    if (word.length != anagram.length) return false;
     return word.split('').sort().join('') === anagram.split('').sort().join('');
 }
-console.log(isAnagram("listen", "silent")); 
-console.log(isAnagram("triangle", "integral")); 
-console.log(isAnagram("word", "drow")); 
-console.log(isAnagram("elite", "title")); 
-console.log(isAnagram("table", "bleat")); 
-console.log(isAnagram("cinema", "iceman")); 
+console.log(isAnagram("listen", "silent"));
+console.log(isAnagram("triangle", "integral"));
+console.log(isAnagram("word", "drow"));
+console.log(isAnagram("elite", "title"));
+console.log(isAnagram("table", "bleat"));
+console.log(isAnagram("cinema", "iceman"));
 console.log(isAnagram("school", "cholas")); 
