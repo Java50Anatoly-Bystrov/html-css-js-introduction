@@ -85,5 +85,110 @@ function computeSalaryBudget(employees) {
     return employees.reduce((res, empl) => res + empl.salary, 0)
     employees.reduce((res,empl) => res + empl.salary);
 }
-console.log(computeSalaryBudget(employees));
+//console.log(computeSalaryBudget(employees));
 
+let field = "salary";
+function displayFieldValue(employees,index,field){
+    console.log(employees[index][field])
+}
+// displayFieldValue(employees, 3, "id");
+// employees[0].salary = 20000;
+// employees[0].department = "QA";
+// displayFieldValue (employees,1,"department");
+// delete employees[0].department
+// displayFieldValue(employees,0,"department");
+function computeMinMaxAvgSalary(employees)
+{
+   const res = employees.reduce((res,empl)=>{
+        if (res.minSalary > empl.salary)
+        {
+            res.minSalary = empl.salary;
+        }
+        else if (res.maxSalary < empl.salary)
+        {
+            res.maxSalary = empl.salary;
+        }
+        res.avgSalary += empl.salary;
+        return res;
+    }, {minSalary: employees[0].salary, maxSalary: employees[0].salary, avgSalary: 0});
+    res.avgSalary= res.avgSalary / employees.length;
+    return res;
+}
+console.log(computeMinMaxAvgSalary(employees));
+
+function displayValue(minMaxAvg, field){
+    console.log(`value of the fied ${field} is ${minMaxAvg[field]}`)
+};
+const minMaxAvg =computeMinMaxAvgSalary(employees);
+// displayValue(minMaxAvg,"avgSalary");
+// displayValue(minMaxAvg,"minSalary");
+// displayValue(minMaxAvg,"maxSalary");
+const strings = ["b", "xyz","lmn", "xyz", "lmn", "xyz", "a"];
+// assumed result : 
+// xyz -> 3 
+// lmn -> 2
+//   a -> 1 
+//   b -> 1 
+function displayStringOccurrences(strings){
+    const stingOccurrences = getStringOccurences(strings);
+    const arrayOccurrences = Object.entries(stingOccurrences);
+    arrayOccurrences.sort(stringComp);
+    arrayOccurrences.forEach(entry => console.log(`${entry[0]} -> ${entry[1]}`));
+}
+function getStringOccurences(string){
+    const res = {};
+    strings.forEach(str => {
+        if(!res[str]){
+            res[str] = 1; 
+        }else{
+            res[str]++;
+        }
+    })
+    return res; 
+}
+function stringComp(entry1, entry2){
+let res = entry2[1] - entry1[1];
+if(res === 0){
+    res = entry1[0] < entry2[0] ? -1 : 1; 
+}
+return res; 
+}
+displayStringOccurrences(strings)
+//HW#19 
+function getMostPapulatedCountry(employees) {
+    const countryCount = employees.reduce((acc, curr) => {
+        if (acc[curr.adress.country]) {
+            acc[curr.adress.country]++;
+        } else {
+            acc[curr.adress.country] = 1;
+        }
+        return acc;
+    }, {});
+    return Object.keys(countryCount).reduce((a, b) => countryCount[a] > countryCount[b] ? a : b);
+}
+console.log(getMostPapulatedCountry(employees));
+function getMostPopulatedCountries(employees, counter) {
+    const countryCount = employees.reduce((acc, curr) => {
+        if (acc[curr.adress.country]) {
+            acc[curr.adress.country]++;
+        } else {
+            acc[curr.adress.country] = 1;
+        }
+        return acc;
+    }, {});
+    const sortedCountries = Object.keys(countryCount).sort((a, b) => countryCount[b] - countryCount[a]);
+    return sortedCountries.slice(0, counter);
+}
+console.log(getMostPopulatedCountries(employees, 3)); 
+
+function isAnagram(word, anagram) {
+    if(word.length != anagram.length) return false;
+    return word.split('').sort().join('') === anagram.split('').sort().join('');
+}
+console.log(isAnagram("listen", "silent")); 
+console.log(isAnagram("triangle", "integral")); 
+console.log(isAnagram("word", "drow")); 
+console.log(isAnagram("elite", "title")); 
+console.log(isAnagram("table", "bleat")); 
+console.log(isAnagram("cinema", "iceman")); 
+console.log(isAnagram("school", "cholas")); 
