@@ -1,9 +1,9 @@
 /* HW #21 */
 // Employe structure and function createEmployee() taken from previous HW
-function createEmployee(id, name, birthYear, salary, city, country) {
+export function createEmployee(id, name, birthYear, salary, city, country) {
     return {id, name, birthYear, salary, address: {city, country}}
 }
-class Company {
+ export class Company {
     #employees //object key: <id value>, value: reference to Employee object
     constructor() {
         
@@ -99,10 +99,3 @@ comp.addEmployee(emp3);
 comp.addEmployee(emp4);
 comp.addEmployee(emp5);
 comp.addEmployee(emp6);
-comp.removeEmployee(126);
-const country = comp.getEmployeesCountry("Israel");
-comp.getEmployeesByAge(22);
-const salary1 = comp.getEmployeesBySalaries(-1, -1);
-const salary2 = comp.getEmployeesBySalaries(12000, 22000);
-const salary3 = comp.getEmployeesBySalaries(-1, 20000);
-const salary4 = comp.getEmployeesBySalaries(15000, -1);
