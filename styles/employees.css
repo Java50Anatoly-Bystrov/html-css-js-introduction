@@ -1,0 +1,324 @@
+body
+{
+    background: url(/styles/image/goto-e1616486128974.jpeg);
+    background-repeat: repeat;
+    background-size: 110%;
+   
+}
+
+.Result-message
+{
+    display: none;
+    text-align: center;
+    color: rgb(104, 70, 162);
+    font-size: 180%;
+    margin-top: 0;
+}
+
+#header
+{
+    display: flex;
+    font-size: 280%;
+    justify-content: center;  
+    margin-top: 5%;
+    margin-bottom: 30px;
+    color: blueviolet;
+}
+#table-section
+{
+    display: none;
+    justify-content: center;
+}
+#form-section
+{
+    display: none;
+}
+
+.AllEmployee
+{
+    margin-left: 5em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    font-size: 110%;
+    background: rgb(104, 70, 162);
+    color: white;
+    border-color: black;
+}
+.NewEmployee
+{
+    margin-left: 5em;
+    align-items: center;
+    width: 180px;
+    height: 40px;
+    font-size: 110%;
+    background: rgb(104, 70, 162);
+    color: white;
+    border-color: black;
+}
+.form-input
+{
+    display: block;
+    justify-content: center; 
+    width: 250px;
+    height: 25px;
+    margin-left: 15%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 150%;
+    align-items: center;
+}
+.form-birthYear
+{
+    display: block;
+    justify-content: center; 
+    width: 250px;
+    height: 25px;
+    margin-left: 15%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 150%;
+    align-items: center;
+}
+.form-salary
+{
+    display: block;
+    justify-content: center; 
+    width: 250px;
+    height: 25px;
+    margin-left: 15%;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    font-size: 150%;
+    align-items: center;
+}
+.submit
+{
+    margin-left: 5em;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    align-items: center;
+  font-size: 120%;
+  text-align: center;
+  background: blueviolet;
+  color: white;
+  border-color: brown;
+}
+.reset
+{
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    align-items: center;
+  font-size: 120%;
+  text-align: center;
+  background: blueviolet;
+  color: white;
+  border-color: brown;
+}
+.form-select 
+{
+    width: 100px;
+    font-size: 120%;
+    margin-top: 20px;
+    margin-bottom: 10px;  
+}
+
+.select-label {
+    margin-left: 16%;
+    margin-top: 10px;
+    font-size: 1.5em;
+}
+.table-logo
+{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    color: blue;
+    font-size: 1.5em
+}
+.table-style
+{
+    text-align: center;
+    outline: 2px solid #000;
+}
+
+@media (min-width: 560px)
+
+{
+    #header
+{
+    font-size: 250%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.AllEmployee
+{
+    margin-left: 5.5em;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.NewEmployee
+{
+    margin-left: 5.5em;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.form-input
+{
+    width: 250px;
+    height: 20px;
+    font-size: 150%;
+}
+.form-birthYear
+{
+    width: 250px;
+    height: 20px;
+    font-size: 150%;
+}
+.form-salary
+{
+    width: 250px;
+    height: 20px;
+    font-size: 150%;
+}
+.form-select 
+{
+    width: 100px;
+    font-size: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;  
+}
+
+.select-label {
+    margin-left: 15%;
+    margin-top: 5px;
+    font-size: 1.4em;
+}
+.submit
+{
+    margin-left: 12em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+    font-size: 120%;
+}
+.reset
+{
+    margin-left: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+    font-size: 120%;
+}
+.table-logo
+{
+margin-top: 5px;
+color: black;
+}
+.table-style
+{
+    outline: 2px solid #000;
+    color:black;
+}
+.general-table
+{
+    display: block;
+    justify-content: center;
+    margin-left: 8em;
+}
+}
+@media (min-width: 1000px)
+{
+    #header
+    {
+        font-size: 280%;
+        margin-top: 2%;
+        margin-bottom: 20px;
+    }
+    .AllEmployee
+    {
+        margin-left: 5.5em;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .NewEmployee
+    {
+        margin-left: 33%;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .form-input
+    {
+        margin-left: 40%;
+        margin-bottom: 20px;
+        width: 250px;
+        height: 25px;
+        font-size: 150%;
+    }
+    .form-birthYear
+    {
+        margin-left: 40%;
+        margin-bottom: 20px;
+        width: 250px;
+        height: 25px;
+        font-size: 150%;
+    }
+    .form-salary
+    {
+        margin-left: 40%;
+        margin-bottom: 20px;
+        width: 250px;
+        height: 25px;
+        font-size: 150%;
+    }
+    .form-select 
+    {
+        width: 100px;
+        font-size: 120%;
+        margin-top: 10px;
+        margin-bottom: 10px;  
+    }
+    
+    .select-label {
+        margin-left: 40%;
+        margin-top: 10px;
+        font-size: 1.7em;
+    }
+    .submit
+    {
+        margin-left: 41%;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        align-items: center;
+        font-size: 120%;
+    }
+    .reset
+    {
+        margin-left: 100px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        align-items: center;
+        font-size: 120%;
+    }
+    .table-logo
+    {
+    font-size: 200%;
+    margin-top: 5px;
+    color:black;
+    }
+    .table-style
+    {
+        font-size: 200%;
+        outline: 2px solid #000;
+        color:black;
+    }
+    .general-table
+    {
+
+        margin-left: 20%;
+    }
+}
